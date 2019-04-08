@@ -79,3 +79,23 @@ main(void)
 	
 	return 0;
 }
+
+
+main(void)
+{
+	int a,n,j,i,t,z;
+	int q=1;
+	scanf("%d %d",&a,&n);
+	for(z=0,i=1;i<=n;i++)
+	{
+		t=a;
+		for(j=1;j<=i;j++)
+		{
+			q*=10;
+			t+=a*q;
+		}
+		z+=t;
+	}
+	printf("%d",z);
+	return 0;
+}

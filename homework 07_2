@@ -6,7 +6,7 @@
 
 要求人的总数与报数均由键盘输入，不能指定成41和3*/
 
-int jiao(int n,int m)                //递归算法计算Josephus问题
+int Josephus(int n,int m)                //递归算法计算Josephus问题
 {
 	if (n<=1||m<=1)
 		return -1;
@@ -19,7 +19,7 @@ int jiao(int n,int m)                //递归算法计算Josephus问题
 	}
 	else
 	{
-		return (jiao(n-1,m)+m-1)%n+1;
+		return (Josephus(n-1,m)+m-1)%n+1;
 	}
 }
 int main(void)

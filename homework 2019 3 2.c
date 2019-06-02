@@ -7,10 +7,10 @@
 
 int main(void)
 {
-	printf("焦国宁 以责任之心责己，以恕己之心恕人。\n");
-	printf("焦国宁\n");
+	printf("you know 以责任之心责己，以恕己之心恕人。\n");
+	printf("you know\n");
 	printf("以责任之心责己，以恕己之心恕人。\n");
-	printf("焦国宁 以责任之心责己，以恕己之心恕人。\n");
+	printf("you know 以责任之心责己，以恕己之心恕人。\n");
 
 	return 0;
 }

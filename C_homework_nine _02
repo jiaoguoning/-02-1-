@@ -8,7 +8,7 @@ typedef struct student
 	int    score;
 	struct student *next;
 }STU;
-STU * create(int n)//创建链表
+STU * create(int n)//创建链表                          正向创建链表
 {
 	int i;
 	STU *h, *q ,*p;
@@ -24,7 +24,7 @@ STU * create(int n)//创建链表
 	}
 	return h;
 }
-void sort(STU *head)//排序
+void sort(STU *head)//排序     冒泡排序
 { 
 	STU * p,* q;
 	char t;
@@ -34,12 +34,12 @@ void sort(STU *head)//排序
 		{ 
 			if(p->score> q->score)
 			{
-			    int m=0;
+			    int m=0;                       //交换数据区域
 				m=p->score;
 				p->score = q->score ;
 				q->score = m ;
 				
-				t=*p->name;
+				t=*p->name;                //交换地址区域
 				*p->name=*q->name;
 				*q->name=t;
 			}
